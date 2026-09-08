@@ -63,3 +63,14 @@ for i in range(1,n+1):
 n = int(input("enter a number"))
 for i in range(1, 11):
     print(f"{n} X {11 - i} = {n} * {11-i}") 
+# count all prime numbers upto 100
+totalnumbers = 0 
+for n in range(2,101):
+    is_prime = True
+    for i in range(2,n):
+        if n%i==0:
+            is_prime = False
+
+        if is_prime:
+         totalnumbers+=1
+print(totalnumbers)
