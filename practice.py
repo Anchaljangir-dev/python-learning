@@ -18,18 +18,42 @@
 #     print(" "*(n-i), end="")
 #     print("*"*(2*i-1), end="")
 #     print("")
-totalnumbers = 0 
-for n in range(2, 101):
-    is_prime = True
+# totalnumbers = 0 
+# for n in range(2, 101):
+#     is_prime = True
     
 
-    for i in range(2, n):
-        if n%i !=0:
-            is_prime = False
-            break
+#     for i in range(2, n):
+#         if n%i !=0:
+#             is_prime = False
+#             break
 
-    if is_prime:
+#     if is_prime:
 
         
-     print(n)
-        
+#      print(n)
+# n = int(input("enter numbers;"))
+# a = 0
+# b = 1
+# i = 0
+# numbers = []
+# while i<n:
+#     print(a)
+#     a , b = b, a + b
+#     i+=1
+    
+# write a fibonacci table 
+n = int(input("enter numbers;"))
+a = 0
+b = 1
+i = 0
+numbers = []
+while i<n:
+    numbers.append(a)
+    a , b = b, a + b
+    i+=1
+
+i = n-1
+while i>=0:
+    print(numbers[i])
+    i -=1
