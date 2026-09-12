@@ -52,7 +52,7 @@ while i<n:
     numbers.append(a)
     a , b = b, a + b
     i+=1
-
+print(numbers)
 i = n-1
 while i>=0:
     print(numbers[i])
